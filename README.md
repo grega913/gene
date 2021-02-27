@@ -15,11 +15,19 @@ There are 3 main parts of application:
  - Backend part is completed with Express.js library for routing.
  - A sinle route (/search/:param) was created which is performing simple SELECT statement
  - A helper function 'getQueryString' is taking care of switching between 2 SQL statements, based on the existance of space as second character in searchTerm.
+ 
+ - install dependencies: 	cd backend
+							npm install
+		
  - start command: backend/npm start
 
 
 
 3. Frontend (Vue.js):
  - Simple Vue.js app for displaying html and making requests to API with the use of Axios library.
- - Main logic is in "frontend/src/components/Search.vue" component,Api connectivity is defined in 
+ - Main logic is in "frontend/src/components/Search.vue" component, Api connectivity is defined in "frontend/src/services/Api_service.vue"
+ 
+ - install dependencies: 	cd frontend
+							npm install
+							
  - start command : frontend/npm start
